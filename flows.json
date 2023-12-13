@@ -1,0 +1,1622 @@
+[
+    {
+        "id": "36cad59e09f4ac5b",
+        "type": "tab",
+        "label": "Map",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6fdfefadbd7e67b9",
+        "type": "tab",
+        "label": "Weather Report",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5e7fc54d74b81406",
+        "type": "tab",
+        "label": "Weather Details",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e9f24978.c8dae8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "HKSTP",
+                "default": "#4B7930",
+                "baseColor": "#371a95",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Travel in Hongkong",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "bf099c492a75ef6d",
+        "type": "ui_tab",
+        "name": "Map",
+        "icon": "fa-map",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bb1460bfc68db62d",
+        "type": "ui_tab",
+        "name": "Weather",
+        "icon": "wi-wu-sunny",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ceede5ddb29f908a",
+        "type": "ui_group",
+        "name": "Button",
+        "tab": "bf099c492a75ef6d",
+        "order": 1,
+        "disp": false,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2ab0ac9b60391d66",
+        "type": "ui_group",
+        "name": "Real Time Weather",
+        "tab": "bb1460bfc68db62d",
+        "order": 1,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "adcb29933357a576",
+        "type": "ui_group",
+        "name": "Weather News",
+        "tab": "bb1460bfc68db62d",
+        "order": 2,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "df69f1b1b7a231b5",
+        "type": "ui_group",
+        "name": "7 days forecast",
+        "tab": "bb1460bfc68db62d",
+        "order": 3,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "124ed8f1c45c3efd",
+        "type": "ui_group",
+        "name": "Weather Dashboard",
+        "tab": "bb1460bfc68db62d",
+        "order": 4,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2d42b71b4a0184ed",
+        "type": "ui_group",
+        "name": "Map",
+        "tab": "bf099c492a75ef6d",
+        "order": 2,
+        "disp": false,
+        "width": 21,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bef3c49e6676905b",
+        "type": "mongodb3",
+        "uri": "mongodb://localhost:27017",
+        "name": "HKO",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "6d5755356bd62427",
+        "type": "ui_worldmap",
+        "z": "36cad59e09f4ac5b",
+        "group": "2d42b71b4a0184ed",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "lat": "22.28337",
+        "lon": "114.13519",
+        "zoom": "10",
+        "layer": "OSMC",
+        "cluster": "18",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "deg",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "",
+        "maplist": "OSMC",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1160,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "1874fb5e07c46db8",
+        "type": "http request",
+        "z": "36cad59e09f4ac5b",
+        "name": "Retreive Major Attractions",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://www.tourism.gov.hk/datagovhk/major_attractions/major_attractions_info_en.csv",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "a0ab0e5603663b3e"
+            ]
+        ]
+    },
+    {
+        "id": "73ab7b0a7f6872cd",
+        "type": "csv",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "ebad0906db73143f"
+            ]
+        ]
+    },
+    {
+        "id": "ebad0906db73143f",
+        "type": "function",
+        "z": "36cad59e09f4ac5b",
+        "name": "Get location",
+        "func": "var data = msg.payload\nvar parts=data.col4.split(',')\nvar latitude = parseFloat(parts[0]);\nvar longitude = parseFloat(parts[1])\n\nvar coordinates = {\n\n    \"layer\":\"attraction\",\n    \"name\":data.col1,\n    \"lat\": latitude,\n    \"lon\": longitude,\n    \"tooltip\":data.col1,\n    \"Description\":data.col2,\n    \"weblink\":data.col6\n};\nmsg.payload = coordinates;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 200,
+        "wires": [
+            [
+                "6d5755356bd62427"
+            ]
+        ]
+    },
+    {
+        "id": "a32598af1680c182",
+        "type": "ui_button",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "group": "ceede5ddb29f908a",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Attractions in Hongkong",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "location_city",
+        "payload": "{\"command\":{\"showlayer\":\"attraction\",\"hidelayer\":[\"WiFi-hk\",\"rainfall\",\"temperature\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1050,
+        "y": 540,
+        "wires": [
+            [
+                "6d5755356bd62427"
+            ]
+        ]
+    },
+    {
+        "id": "a0ab0e5603663b3e",
+        "type": "function",
+        "z": "36cad59e09f4ac5b",
+        "name": "Remove title line",
+        "func": "\nvar data = msg.payload;\n\nvar rows = data.split('\\n');\n\nrows.shift();\n\nvar newData = rows.join('\\n');\n\nmsg.payload = newData;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "73ab7b0a7f6872cd"
+            ]
+        ]
+    },
+    {
+        "id": "98d9585e4f0f8a86",
+        "type": "http request",
+        "z": "36cad59e09f4ac5b",
+        "name": "Retreive WiFi-hk",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://www.ogcio.gov.hk/en/our_work/community/common_wifi_branding/fixed-wi-fi-hk-locations.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "ec7a73bb08532697"
+            ]
+        ]
+    },
+    {
+        "id": "8a97cf7bcf7593f9",
+        "type": "function",
+        "z": "36cad59e09f4ac5b",
+        "name": "Get location",
+        "func": "var data = msg.payload\nvar latitude = data.Latitude;\nvar longitude = data.Longitude;\n\nvar coordinates = {\n    \"icon\":\":signal_strength:\",\n    \"layer\":\"WiFi-hk\",\n    \"name\":data.LocationNameEN,\n    \"lat\": latitude,\n    \"lon\": longitude,\n    \"tooltip\":data.AddressEN,\n    \"Description\":data.AddressEN,\n};\nmsg.payload = coordinates;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 360,
+        "wires": [
+            [
+                "6d5755356bd62427"
+            ]
+        ]
+    },
+    {
+        "id": "69195290f8cdf087",
+        "type": "ui_button",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "group": "ceede5ddb29f908a",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "WiFi",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "wifi",
+        "payload": "{\"command\":{\"showlayer\":\"WiFi-hk\",\"hidelayer\":[\"attraction\",\"rainfall\",\"temperature\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 500,
+        "wires": [
+            [
+                "6d5755356bd62427"
+            ]
+        ]
+    },
+    {
+        "id": "ec7a73bb08532697",
+        "type": "function",
+        "z": "36cad59e09f4ac5b",
+        "name": "Data Handler",
+        "func": "msg.payload=msg.payload.slice(1, -1)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 460,
+        "wires": [
+            [
+                "9c0cda34b512b7ae"
+            ]
+        ]
+    },
+    {
+        "id": "9c0cda34b512b7ae",
+        "type": "json",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 610,
+        "y": 460,
+        "wires": [
+            [
+                "5899c5126686f720"
+            ]
+        ]
+    },
+    {
+        "id": "5899c5126686f720",
+        "type": "split",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 750,
+        "y": 360,
+        "wires": [
+            [
+                "8a97cf7bcf7593f9"
+            ]
+        ]
+    },
+    {
+        "id": "6b2a1663fc223f06",
+        "type": "http request",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 300,
+        "y": 640,
+        "wires": [
+            [
+                "5783666689366f62"
+            ]
+        ]
+    },
+    {
+        "id": "044513ebc3fc297b",
+        "type": "inject",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "180",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "1874fb5e07c46db8"
+            ]
+        ]
+    },
+    {
+        "id": "aa37939cd64ab0a8",
+        "type": "inject",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "240",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "98d9585e4f0f8a86"
+            ]
+        ]
+    },
+    {
+        "id": "5783666689366f62",
+        "type": "function",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "func": "data=msg.payload.temperature.data\nrainfall=msg.payload.rainfall.data\n\ndataset=[]\ndata.forEach((item,index,array)=>{\n   if (location[item.place]){\n       temp={       \n                    \"layer\":\"temperature\",\n                    \"lat\": location[item.place].lng,\n                    \"lon\": location[item.place].lat,\n                    \"name\": item.place,\n                    \"description\": item.place,\n                    \"value\": item.value,\n                    \"unit\": \"℃\",\n                    \"iconColor\": \"Yellow\"\n                }\n       dataset.push(temp)\n   }\n})\n\nrainfall.forEach((item,index,array)=>{\n   if (location[item.place]){\n       temp={       \n                    \"layer\":\"rainfall\",\n                    \"lat\": location[item.place].lng,\n                    \"lon\": location[item.place].lat,\n                    \"name\": item.place,\n                    \"description\": \"rainfall \"+item.place,\n                    \"value\": \"\"+item.max+\"\",\n                    \"unit\": \"mm\",\n                    \"iconColor\": \"blue\"\n                }\n       dataset.push(temp)\n   }\n})\n\n\nmsg.payload=dataset;\n   \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 28,
+        "initialize": "// 部署节点后，此处添加的代码将运行一次。 \nlocation=\n{\n    \"King's Park\":{\n        \"lng\":22.3111031,\n        \"lat\":114.1712442\n    },\n    \"Hong Kong Observatory\":{\n        \"lng\":22.3022564,\n        \"lat\":114.1719627\n    },\n    \"Wong Chuk Hang\":{\n        \"lng\":22.2391622,\n        \"lat\":114.1612247\n    },\n    \"Ta Kwu Ling\":{\n        \"lng\":22.5468575,\n        \"lat\":114.1467588\n    },\n    \"Lau Fau Shan\":{\n        \"lng\":22.4681707,\n        \"lat\":113.9669794\n    },\n    \"Tai Po\":{\n        \"lng\":22.445909,\n        \"lat\":114.1462521\n    },\n    \"Sha Tin\":{\n        \"lng\":22.3887371,\n        \"lat\":114.1820634\n    },\n    \"Tuen Mun\":{\n        \"lng\":22.3953899,\n        \"lat\":113.8965624\n    },\n    \"Tseung Kwan O\":{\n        \"lng\":22.3076227,\n        \"lat\":114.2516125\n    },\n    \"Sai Kung\":{\n        \"lng\":22.4079724,\n        \"lat\":114.2468079\n    },\n    \"Cheung Chau\":{\n        \"lng\":22.209532,\n        \"lat\":114.0117141\n    },\n    \"Chek Lap Kok\":{\n        \"lng\":22.307099,\n        \"lat\":113.9017574\n    },\n    \"Tsing Yi\":{\n        \"lng\":22.3444361,\n        \"lat\":114.0808219\n    },\n    \"Shek Kong\":{\n        \"lng\":22.429598,\n        \"lat\":114.0681678\n    },\n    \"Tsuen Wan Ho Koon\":{\n        \"lng\":22.383726,\n        \"lat\":114.1057233\n    },\n    \"Tsuen Wan Shing Mun Valley\":{\n        \"lng\":22.374817,\n        \"lat\":114.1237693\n    },\n    \"Hong Kong Park\":{\n        \"lng\":22.27651,\n        \"lat\":114.1573743\n    },\n    \"Shau Kei Wan\":{\n        \"lng\":22.2787251,\n        \"lat\":114.2220546\n    },\n    \"Kowloon City\":{\n        \"lng\":22.3219416,\n        \"lat\":114.1718193\n    },\n    \"Happy Valley\":{\n        \"lng\":22.2698827,\n        \"lat\":114.1752625\n    },\n    \"Wong Tai Sin\":{\n        \"lng\":22.3420454,\n        \"lat\":114.1898863\n    },\n    \"Stanley\":{\n        \"lng\":22.2213164,\n        \"lat\":114.2047033\n    },\n    \"Kwun Tong\":{\n        \"lng\":22.3120022,\n        \"lat\":114.2149615\n    },\n    \"Sham Shui Po\":{\n        \"lng\":22.3290605,\n        \"lat\":114.1478785\n    },\n    \"Kai Tak Runway Park\":{\n        \"lng\":22.3048553,\n        \"lat\":114.2142191\n    },\n    \"Yuen Long Park\":{\n        \"lng\":22.4417892,\n        \"lat\":114.0165956\n    },\n    \"Tai Mei Tuk\":{\n        \"lng\":22.4734378,\n        \"lat\":114.2312952\n    },\n    \"Central & Western District\":{\n        \"lng\":22.2724542,\n        \"lat\":114.1175774\n    },\n    \"Eastern District\":{\n        \"lng\":22.2756223,\n        \"lat\":114.1884734\n    },\n    \"Kwai Tsing\":{\n        \"lng\":22.3534098,\n        \"lat\":114.0783234\n    },\n    \"Islands District\":{\n        \"lng\":22.354318,\n        \"lat\":113.8600486\n    },\n    \"North District\":{\n        \"lng\":22.5124074,\n        \"lat\":114.083108\n    },\n    \"Southern District\":{\n        \"lng\":22.239471,\n        \"lat\":114.118719\n    },\n    \"Tsuen Wan\":{\n        \"lng\":22.3707241,\n        \"lat\":114.0862009\n    },\n    \"Wan Chai\":{\n        \"lng\":22.2773398,\n        \"lat\":114.1652481\n    },\n    \"Yuen Long\":{\n        \"lng\":22.4458108,\n        \"lat\":113.9967013\n    },\n    \"Yau Tsim Mong\":{\n        \"lng\":22.3099306,\n        \"lat\":114.1500914\n    }\n}",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 640,
+        "wires": [
+            [
+                "6d5755356bd62427"
+            ]
+        ]
+    },
+    {
+        "id": "7ad22990d47c1bde",
+        "type": "ui_button",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "group": "ceede5ddb29f908a",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Temperature",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-thermometer-quarter ",
+        "payload": "{\"command\":{\"showlayer\":\"temperature\",\"hidelayer\":[\"WiFi-hk\",\"attraction\",\"rainfall\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1010,
+        "y": 580,
+        "wires": [
+            [
+                "6d5755356bd62427",
+                "6b2a1663fc223f06"
+            ]
+        ]
+    },
+    {
+        "id": "00977c1933c35162",
+        "type": "ui_button",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "group": "ceede5ddb29f908a",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Rainfall",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-tint",
+        "payload": "{\"command\":{\"showlayer\":\"rainfall\",\"hidelayer\":[\"WiFi-hk\",\"attraction\",\"temperature\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 620,
+        "wires": [
+            [
+                "6d5755356bd62427",
+                "6b2a1663fc223f06"
+            ]
+        ]
+    },
+    {
+        "id": "329d14b5938b81c9",
+        "type": "inject",
+        "z": "36cad59e09f4ac5b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "120",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.4",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 640,
+        "wires": [
+            [
+                "6b2a1663fc223f06"
+            ]
+        ]
+    },
+    {
+        "id": "f761082941f8221c",
+        "type": "inject",
+        "z": "6fdfefadbd7e67b9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "map of clinic",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 160,
+        "wires": [
+            [
+                "187d4882bd133423"
+            ]
+        ]
+    },
+    {
+        "id": "187d4882bd133423",
+        "type": "http request",
+        "z": "6fdfefadbd7e67b9",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=fnd&lang=en",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "bf3d94643cd8a74e"
+            ]
+        ]
+    },
+    {
+        "id": "bf3d94643cd8a74e",
+        "type": "json",
+        "z": "6fdfefadbd7e67b9",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 730,
+        "y": 160,
+        "wires": [
+            [
+                "079bdc66472e7934",
+                "030d642e4ec945e4"
+            ]
+        ]
+    },
+    {
+        "id": "079bdc66472e7934",
+        "type": "function",
+        "z": "6fdfefadbd7e67b9",
+        "name": "function 2",
+        "func": "var weatherForecast = msg.payload.weatherForecast\nvar nine_day = []\nfor (let index = 0; index < weatherForecast.length; index++) {\n    var one_day = []\n    var date = weatherForecast[index].forecastDate\n    var date_re = date.substring(4, 6) + \".\" + date.substring(6, 8)\n    var week = weatherForecast[index].week\n    var weather = weatherForecast[index].ForecastIcon\n    var weather_link = \"https://dashboard.data.gov.hk/images/weather/120x120/pic\"+weather+\".png\"\n    var min_temp = weatherForecast[index].forecastMintemp.value + \"℃\"\n    var max_temp = weatherForecast[index].forecastMaxtemp.value + \"℃\"\n    var temp = min_temp + \"-\" + max_temp\n    var min_rh = weatherForecast[index].forecastMinrh.value + \"%\"\n    var max_rh = weatherForecast[index].forecastMaxrh.value + \"%\"\n    var rh = min_rh + \"-\" + max_rh\n    one_day.push(date_re)\n    one_day.push(week)\n    one_day.push(weather_link)\n    one_day.push(temp)\n    one_day.push(rh)\n    nine_day.push(one_day)\n}\nmsg.payload = nine_day\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 160,
+        "wires": [
+            [
+                "9e1d5d4649a937b5",
+                "a4d1492ab1f284c8"
+            ]
+        ]
+    },
+    {
+        "id": "9e1d5d4649a937b5",
+        "type": "debug",
+        "z": "6fdfefadbd7e67b9",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "a4d1492ab1f284c8",
+        "type": "ui_template",
+        "z": "6fdfefadbd7e67b9",
+        "group": "df69f1b1b7a231b5",
+        "name": "7 Days Forecast",
+        "order": 1,
+        "width": 15,
+        "height": 5,
+        "format": "<style>\n    .container {\n        display: grid;\n        grid-template-columns: repeat(9, 1fr);\n        grid-template-rows: repeat(5, 1fr);\n    }\n\n    .box {\n        text-align: center;\n        width: 30px;\n        height: 20px;\n        font-size: 12px;\n    }\n\n    .icon {\n        text-align: center;\n        width: 50px;\n        height: 50px;\n        }\n</style>\n\n<div class=\"container\" id=\"container\"></div>\n<script>\n    var container = document.getElementById('container');\n        \n    for (var i = 0; i < 9; i++) { \n        var box=document.createElement('div'); \n        box.className='box' ;\n        var i_str = i.toString();\n        box.setAttribute('ng-bind-html', \"msg.payload[\"+i_str+\"][0]\");\n        container.appendChild(box);\n        }\n    \n    for (var i = 0; i < 9; i++) { \n        var box=document.createElement('div'); \n        box.className='box' ;\n        var i_str = i.toString();\n        box.setAttribute('ng-bind-html', \"msg.payload[\"+i_str+\"][1]\");\n        container.appendChild(box);\n        }\n\n    for (var i = 0; i < 9; i++) { \n        var box=document.createElement('img'); \n        box.className='icon' ;\n        var i_str = i.toString();\n        box.setAttribute('ng-src', \"{{msg.payload[\"+i_str+\"][2]}}\");\n        container.appendChild(box);\n        }\n\n    for (var i = 0; i < 9; i++) { \n        var box=document.createElement('div'); \n        box.className='box' ;\n        var i_str = i.toString();\n        box.setAttribute('ng-bind-html', \"msg.payload[\"+i_str+\"][3]\");\n        container.appendChild(box);\n        }\n    \n    for (var i = 0; i < 9; i++) { \n        var box=document.createElement('div'); \n        box.className='box';\n        var i_str = i.toString();\n        box.setAttribute('ng-bind-html', \"msg.payload[\"+i_str+\"][4]\");\n        container.appendChild(box);\n        }\n    \n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "030d642e4ec945e4",
+        "type": "function",
+        "z": "6fdfefadbd7e67b9",
+        "name": "function 3",
+        "func": "var generalSituation = msg.payload.generalSituation\nmsg.payload = generalSituation\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "da62fee67a14c8c4"
+            ]
+        ]
+    },
+    {
+        "id": "da62fee67a14c8c4",
+        "type": "ui_text",
+        "z": "6fdfefadbd7e67b9",
+        "group": "adcb29933357a576",
+        "order": 1,
+        "width": 15,
+        "height": 2,
+        "name": "Weather News",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "my_text",
+        "style": false,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "8",
+        "color": "#ffffff",
+        "x": 600,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8b55d3c854c45b1e",
+        "type": "ui_template",
+        "z": "6fdfefadbd7e67b9",
+        "group": "adcb29933357a576",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .my_text .value {\n        font-size: 8px;\n        text-align: left;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "763e785f59f4e442",
+        "type": "inject",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "f3ca753481bdbd97"
+            ]
+        ]
+    },
+    {
+        "id": "f3ca753481bdbd97",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "Retrieve Last Record Query",
+        "func": "msg.payload = [\n    {\n        \"$query\": {}\n    },\n    {\n        \"sort\": {\n            \"_id\": -1\n        }\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 300,
+        "wires": [
+            [
+                "15504781f7d285d9"
+            ]
+        ]
+    },
+    {
+        "id": "15504781f7d285d9",
+        "type": "mongodb3 in",
+        "z": "5e7fc54d74b81406",
+        "service": "_ext_",
+        "configNode": "bef3c49e6676905b",
+        "name": "HKO Retrieve Last Record",
+        "collection": "Pollutant",
+        "operation": "findOne",
+        "x": 740,
+        "y": 300,
+        "wires": [
+            [
+                "4fd0040376205499"
+            ]
+        ]
+    },
+    {
+        "id": "4fd0040376205499",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "Get Last updateTime",
+        "func": "if(msg.payload.hasOwnProperty('updateTime')) {\n    flow.set('lastUpdateTime', msg.payload.updateTime);\n} else {\n    flow.set('lastUpdateTime', \"\");\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "3b995b36d4fd0c7a"
+            ]
+        ]
+    },
+    {
+        "id": "3b995b36d4fd0c7a",
+        "type": "http request",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://www.aqhi.gov.hk/epd/ddata/html/out/24pc_ChS.xml",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 460,
+        "y": 360,
+        "wires": [
+            [
+                "410eb1020e487859"
+            ]
+        ]
+    },
+    {
+        "id": "410eb1020e487859",
+        "type": "xml",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 630,
+        "y": 360,
+        "wires": [
+            [
+                "33ffa3b7cab894bf"
+            ]
+        ]
+    },
+    {
+        "id": "33ffa3b7cab894bf",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "New Record Available",
+        "func": "var lastUpdateTime = flow.get('lastUpdateTime');\n\nvar updateTimeTemp = new Date(msg.payload.AQHI24HrPollutantConcentration.lastBuildDate)\nvar updateTime = updateTimeTemp.toISOString();\n\nif (updateTime > lastUpdateTime) {\n    msg.needUpdate = true;\n    msg.payload.updateTime = updateTime;\n} else {\n    msg.needUpdate = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 360,
+        "wires": [
+            [
+                "0d1d642c135df07c",
+                "4a9b0db9cc8be289"
+            ]
+        ]
+    },
+    {
+        "id": "0d1d642c135df07c",
+        "type": "debug",
+        "z": "5e7fc54d74b81406",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4a9b0db9cc8be289",
+        "type": "switch",
+        "z": "5e7fc54d74b81406",
+        "name": "Need Update",
+        "property": "needUpdate",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 230,
+        "y": 440,
+        "wires": [
+            [
+                "3bf65cd09b244bcf"
+            ],
+            [
+                "011929e4e3e01d79"
+            ]
+        ]
+    },
+    {
+        "id": "3bf65cd09b244bcf",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "No Update",
+        "func": "msg.payload = \"No Update\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "011929e4e3e01d79",
+        "type": "mongodb3 in",
+        "z": "5e7fc54d74b81406",
+        "service": "_ext_",
+        "configNode": "bef3c49e6676905b",
+        "name": "",
+        "collection": "Pollutant",
+        "operation": "insert",
+        "x": 470,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "724d20d131b1596e",
+        "type": "inject",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "d5932d9a74fa8841"
+            ]
+        ]
+    },
+    {
+        "id": "d5932d9a74fa8841",
+        "type": "ui_date_picker",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "label": "Date",
+        "group": "124ed8f1c45c3efd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "77a3b5ec64d40aa5"
+            ]
+        ]
+    },
+    {
+        "id": "77a3b5ec64d40aa5",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "function 4",
+        "func": "var date_value = msg.payload\nvar date = new Date(date_value)\n\nvar st, et ;\nvar minMilliSeconds = 60 * 1000;\nvar hourMilliSeconds = 60 * minMilliSeconds;\nvar dayMilliSeconds = 24 * hourMilliSeconds;\nvar duration = 1 * hourMilliSeconds;\n\net = date;\nst = new Date();\nst.setTime(et.getTime() - duration);\n\nmsg.startTime = st;\nmsg.endTime = et;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 560,
+        "wires": [
+            [
+                "a67982ce53bcb2e7"
+            ]
+        ]
+    },
+    {
+        "id": "a67982ce53bcb2e7",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "Construct Queries",
+        "func": "var st = msg.startTime;\nvar et = msg.endTime;\n\nvar stts = st.getTime();\nvar etts = et.getTime();\n\nvar ststr=st.toISOString();\nvar etstr=et.toISOString();\n\nvar query = { 'updateTime': { $gt: ststr, $lt: etstr} };\n\nmsg.payload = query;\nmsg.ststr = ststr ;\nmsg.etstr = etstr ;\n\nflow.set('query', query);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 560,
+        "wires": [
+            [
+                "04d3f9624aba2b39"
+            ]
+        ]
+    },
+    {
+        "id": "ab9898f56556095b",
+        "type": "mongodb3 in",
+        "z": "5e7fc54d74b81406",
+        "service": "_ext_",
+        "configNode": "bef3c49e6676905b",
+        "name": "HKO Retrieve Records",
+        "collection": "Pollutant",
+        "operation": "find.toArray",
+        "x": 860,
+        "y": 660,
+        "wires": [
+            [
+                "c998f8332e7b9db1"
+            ]
+        ]
+    },
+    {
+        "id": "c998f8332e7b9db1",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "Format Chart Data",
+        "func": "var pollutant = flow.get('pollutant')\n\nvar data = Object.values(msg.payload)[0]\n\nvar Pollutant = data.AQHI24HrPollutantConcentration.PollutantConcentration\n\nvar series = []\nvar all_points = []\n\nfor (let index = 0; index < 18; index++) {\n    series.push(Pollutant[index * 24].StationName[0])\n    var points = []\n    for (let j = 0; j < 24; j++) {\n        var x = Pollutant[index * 24 + j].DateTime[0]\n        if (pollutant == \"NO2\")\n            var y = Pollutant[index * 24 + j].二氧化氮[0]\n        else if (pollutant == \"Ozone\")\n            var y = Pollutant[index * 24 + j].臭氧[0]\n        else if (pollutant == \"SO2\")\n            var y = Pollutant[index * 24 + j].二氧化硫[0]\n        else if (pollutant == \"CO\")\n            var y = Pollutant[index * 24 + j].一氧化碳[0]\n        else if (pollutant == \"PM2.5\")\n            var y = Pollutant[index * 24 + j].细颗粒物[0]\n        else\n            var y = Pollutant[index * 24 + j].可吸入悬浮粒子[0]\n        var point = {x:x, y:y}\n        points.push(point)\n    }\n    all_points.push(points)\n}\n\nvar chartData = [{\"series\": series, \"data\": all_points, \"labels\": \"\"}];\n\nmsg.payload = chartData ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 740,
+        "wires": [
+            [
+                "b5146c90c91d21de"
+            ]
+        ]
+    },
+    {
+        "id": "b5146c90c91d21de",
+        "type": "ui_chart",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "group": "124ed8f1c45c3efd",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Pollutant",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "24",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1040,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04d3f9624aba2b39",
+        "type": "ui_dropdown",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "124ed8f1c45c3efd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "NO2",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Ozone",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "SO2",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "CO",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "PM10",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "PM2.5",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 400,
+        "y": 700,
+        "wires": [
+            [
+                "0a3bdeaf4a7afd0c"
+            ]
+        ]
+    },
+    {
+        "id": "0a3bdeaf4a7afd0c",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "Construct Queries",
+        "func": "flow.set('pollutant', msg.payload);\n\nmsg.payload = flow.get('query');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 700,
+        "wires": [
+            [
+                "ab9898f56556095b",
+                "da80651bffc29942"
+            ]
+        ]
+    },
+    {
+        "id": "da80651bffc29942",
+        "type": "debug",
+        "z": "5e7fc54d74b81406",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "9d9f468932668b59",
+        "type": "inject",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 960,
+        "wires": [
+            [
+                "a92fd3298419777f"
+            ]
+        ]
+    },
+    {
+        "id": "a92fd3298419777f",
+        "type": "http request",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=sc",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 340,
+        "y": 960,
+        "wires": [
+            [
+                "dbd9d2c030cbba02"
+            ]
+        ]
+    },
+    {
+        "id": "dbd9d2c030cbba02",
+        "type": "json",
+        "z": "5e7fc54d74b81406",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 530,
+        "y": 960,
+        "wires": [
+            [
+                "b6bc18713697b30a",
+                "a5b9d426bdfb1d27",
+                "7535b9f1a86274dc",
+                "d4c4d057f0b9e849"
+            ]
+        ]
+    },
+    {
+        "id": "bf95bd553dbe8b4e",
+        "type": "debug",
+        "z": "5e7fc54d74b81406",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b6bc18713697b30a",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "function 5",
+        "func": "var value = msg.payload.temperature.data[1].value\nvar time = msg.payload.temperature.recordTime\nvar date_offset = new Date(time)\nvar date = new Date(date_offset.getTime() + (8 * 60 * 60 * 1000))\nvar year = date.getFullYear();\nvar month = ('0' + (date.getMonth() + 1)).slice(-2); // 月份从0开始，所以需要加1\nvar day = ('0' + date.getDate()).slice(-2);\nvar hours = ('0' + date.getHours()).slice(-2);\nvar minutes = ('0' + date.getMinutes()).slice(-2);\n// 格式化为指定字符串格式\nvar formattedString = year + '.' + month + '.' + day + ' ' + hours + ':' + minutes;\nvar date_str = \"latest record time: \" + formattedString\nvar place = msg.payload.temperature.data[1].place + \" real-time temperature\"\nvar str = value.toString() + \"℃\"\nvar list = []\nlist.push(place)\nlist.push(str)\nlist.push(date_str)\nmsg.payload = list\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 940,
+        "wires": [
+            [
+                "bf95bd553dbe8b4e",
+                "88d3c2d84c199ea0"
+            ]
+        ]
+    },
+    {
+        "id": "88d3c2d84c199ea0",
+        "type": "ui_template",
+        "z": "5e7fc54d74b81406",
+        "group": "2ab0ac9b60391d66",
+        "name": "",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "format": "<style>\n    .title {\n        background-color: green;\n        color: white;\n        font-size: 12px;\n        font-weight: bold;\n        text-align: center;\n        padding: 10px;\n    }\n\n    .value {\n        font-size: 20px;\n        text-align: center;\n        padding: 10px;\n    }\n    \n    .time {\n        font-size: 10px;\n        padding: 10px;\n        }\n</style>\n\n<div class=\"title\" ng-bind-html=\"msg.payload[0]\"></div>\n<div class=\"value\" ng-bind-html=\"msg.payload[1]\"></div>\n<div class=\"time\" ng-bind-html=\"msg.payload[2]\"></div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 940,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5b9d426bdfb1d27",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "function 6",
+        "func": "var value = msg.payload.humidity.data[0].value\nvar time = msg.payload.humidity.recordTime\nvar date_offset = new Date(time)\nvar date = new Date(date_offset.getTime() + (8 * 60 * 60 * 1000))\nvar year = date.getFullYear();\nvar month = ('0' + (date.getMonth() + 1)).slice(-2); // 月份从0开始，所以需要加1\nvar day = ('0' + date.getDate()).slice(-2);\nvar hours = ('0' + date.getHours()).slice(-2);\nvar minutes = ('0' + date.getMinutes()).slice(-2);\n// 格式化为指定字符串格式\nvar formattedString = year + '.' + month + '.' + day + ' ' + hours + ':' + minutes;\nvar date_str = \"latest record time: \" + formattedString\nvar place = msg.payload.humidity.data[0].place + \" real-time humidity\"\nvar str = value.toString() + \"%\"\nvar list = []\nlist.push(place)\nlist.push(str)\nlist.push(date_str)\nmsg.payload = list\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 1160,
+        "wires": [
+            [
+                "d5e7f83632a25b5b"
+            ]
+        ]
+    },
+    {
+        "id": "d5e7f83632a25b5b",
+        "type": "ui_template",
+        "z": "5e7fc54d74b81406",
+        "group": "2ab0ac9b60391d66",
+        "name": "",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "format": "<style>\n    .title {\n        background-color: green;\n        color: white;\n        font-size: 12px;\n        font-weight: bold;\n        text-align: center;\n        padding: 10px;\n        height: 30px;\n    }\n\n    .value {\n        font-size: 20px;\n        text-align: center;\n        padding: 10px;\n        height: 50px;\n    }\n    \n    .time {\n        font-size: 10px;\n        padding: 10px;\n        height: 20px;\n        }\n</style>\n\n<div class=\"title\" ng-bind-html=\"msg.payload[0]\"></div>\n<div class=\"value\" ng-bind-html=\"msg.payload[1]\"></div>\n<div class=\"time\" ng-bind-html=\"msg.payload[2]\"></div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 320,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7535b9f1a86274dc",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "function 7",
+        "func": "var value = msg.payload.uvindex.data[0].value\nvar level = msg.payload.uvindex.data[0].desc\nvar time = msg.payload.uvindex.recordDesc\nvar date_str = \"latest record time: \" + time\nvar place = msg.payload.uvindex.data[0].place + \" real-time uvindex\"\nvar str = value.toString() + \" \" + level\nvar list = []\nlist.push(place)\nlist.push(str)\nlist.push(date_str)\nmsg.payload = list\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1140,
+        "wires": [
+            [
+                "5ea3779c936fea2f"
+            ]
+        ]
+    },
+    {
+        "id": "5ea3779c936fea2f",
+        "type": "ui_template",
+        "z": "5e7fc54d74b81406",
+        "group": "2ab0ac9b60391d66",
+        "name": "",
+        "order": 3,
+        "width": 4,
+        "height": 3,
+        "format": "<style>\n    .title {\n        background-color: green;\n        color: white;\n        font-size: 12px;\n        font-weight: bold;\n        text-align: center;\n        padding: 10px;\n        height: 30px;\n    }\n\n    .value {\n        font-size: 20px;\n        text-align: center;\n        padding: 10px;\n        height: 50px;\n    }\n    \n    .time {\n        font-size: 10px;\n        padding: 10px;\n        height: 20px;\n        }\n</style>\n\n<div class=\"title\" ng-bind-html=\"msg.payload[0]\"></div>\n<div class=\"value\" ng-bind-html=\"msg.payload[1]\"></div>\n<div class=\"time\" ng-bind-html=\"msg.payload[2]\"></div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 520,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4c4d057f0b9e849",
+        "type": "function",
+        "z": "5e7fc54d74b81406",
+        "name": "function 8",
+        "func": "var icon = msg.payload.icon[0]\nvar icon_link = \"https://dashboard.data.gov.hk/images/weather/120x120/pic\"+icon+\".png\"\nvar time = msg.payload.iconUpdateTime\nvar date_offset = new Date(time)\nvar date = new Date(date_offset.getTime() + (8 * 60 * 60 * 1000))\nvar year = date.getFullYear();\nvar month = ('0' + (date.getMonth() + 1)).slice(-2); // 月份从0开始，所以需要加1\nvar day = ('0' + date.getDate()).slice(-2);\nvar hours = ('0' + date.getHours()).slice(-2);\nvar minutes = ('0' + date.getMinutes()).slice(-2);\n// 格式化为指定字符串格式\nvar formattedString = year + '.' + month + '.' + day + ' ' + hours + ':' + minutes;\nvar date_str = \"latest record time: \" + formattedString\nvar list = []\nlist.push(icon_link)\nlist.push(date_str)\nmsg.payload = list\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 1100,
+        "wires": [
+            [
+                "00c91b04e8115371"
+            ]
+        ]
+    },
+    {
+        "id": "00c91b04e8115371",
+        "type": "ui_template",
+        "z": "5e7fc54d74b81406",
+        "group": "2ab0ac9b60391d66",
+        "name": "",
+        "order": 4,
+        "width": 4,
+        "height": 5,
+        "format": "<style>  \n    .time {\n        font-size: 10px;\n        }\n</style>\n\n<img ng-src=\"{{msg.payload[0]}}\">\n<div class=\"time\" ng-bind-html=\"msg.payload[1]\"></div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    }
+]
